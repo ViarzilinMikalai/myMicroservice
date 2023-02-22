@@ -1,16 +1,15 @@
-package com.example.domain;
+package com.verzilin.domain;
 
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "usr")
 @Data
-public class User {
+public class MyNumber {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long age;
+    private Long numberValue;
 }
